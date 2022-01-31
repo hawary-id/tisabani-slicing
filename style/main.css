@@ -10839,4 +10839,73 @@ footer p {
 .form-control {
   background-color: #f3f3f3;
 }
+
+.navbar-store {
+  padding-top: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-store {
+    background-color: #ffff !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-item .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.profile-picture {
+  max-height: 45px;
+}
+
+.card-badge {
+  display: inline-block;
+  min-width: 2em;
+  padding: 0.3em;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  background-color: #d66b07;
+  color: #fefefefe;
+  margin-left: -10px;
+}
+
+.navbar-fixed-top.scroller {
+  background-color: #ffff !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.btn-primary {
+  background-color: #d66b07;
+  border-color: transparent;
+  border-radius: 60px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #994a01;
+  background-color: #994a01;
+  border-color: #994a01;
+  /*set the color you want here*/
+}
+
+.pages-home h5 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.pages-home .store-categories {
+  margin-top: 30px;
+}
+
+.pages-home .store-new-products {
+  margin-top: 10px;
+}
 /*# sourceMappingURL=main.css.map */
