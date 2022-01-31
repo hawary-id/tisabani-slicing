@@ -10851,17 +10851,17 @@ footer p {
 }
 
 @media (min-width: 992px) {
-  .nav-item .nav-link {
+  .navbar-store .nav-item .nav-link {
     margin-left: 10px;
     margin-right: 10px;
   }
 }
 
-.profile-picture {
+.navbar-store .profile-picture {
   max-height: 45px;
 }
 
-.card-badge {
+.navbar-store .card-badge {
   display: inline-block;
   min-width: 2em;
   padding: 0.3em;
@@ -10873,39 +10873,108 @@ footer p {
   margin-left: -10px;
 }
 
-.navbar-fixed-top.scroller {
-  background-color: #ffff !important;
-  -webkit-transition: background-color 200ms linear;
-  transition: background-color 200ms linear;
-}
-
-.btn-primary {
+.navbar-store .btn-primary {
   background-color: #d66b07;
   border-color: transparent;
   border-radius: 60px;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.navbar-store .btn-primary:hover,
+.navbar-store .btn-primary:focus,
+.navbar-store .btn-primary:active,
+.navbar-store .btn-primary.active,
+.navbar-store .open > .dropdown-toggle.btn-primary {
   color: #994a01;
   background-color: #994a01;
   border-color: #994a01;
   /*set the color you want here*/
 }
 
-.pages-home h5 {
+.navbar-fixed-top.scrolled {
+  background-color: #ffff !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.page-home h5 {
   font-weight: 300;
   margin-bottom: 15px;
 }
 
-.pages-home .store-categories {
+.page-home .store-categories {
   margin-top: 30px;
 }
 
-.pages-home .store-new-products {
+.page-home .store-new-products {
   margin-top: 10px;
+}
+
+.component-categories {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.component-categories:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  text-decoration: none;
+}
+
+.component-categories .categories-text {
+  font-size: 18px;
+  text-align: center;
+  color: #0c0d36;
+  font-weight: normal;
+  margin-top: 12px;
+}
+
+.component-products {
+  margin-bottom: 20px;
+}
+
+.component-products:hover {
+  text-decoration: none;
+}
+
+.component-products .products-thumbnail {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.component-products .products-thumbnail:hover .products-image, .component-products .products-thumbnail:focus .products-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.component-products .products-thumbnail .products-image {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.component-products .products-text {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0c0d36;
+  margin-top: 12px;
+}
+
+.component-products .products-price {
+  font-weight: 500;
+  font-size: 16px;
+  color: #d66b07;
 }
 /*# sourceMappingURL=main.css.map */
