@@ -17,3 +17,8 @@ footer {
 .form-control {
   background-color: #f3f3f3;
 }
+
+.btn-primary {
+  border-radius: 60px;
+  @include button-variant(#ff7158, transparent);
+}

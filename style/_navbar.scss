@@ -23,25 +23,9 @@
     border-radius: 50%;
     font-size: 10px;
     text-align: center;
-    background-color: #d66b07;
+    background-color: #ff7158;
     color: #fefefefe;
     margin-left: -10px;
-  }
-
-  .btn-primary {
-    background-color: #d66b07;
-    border-color: transparent;
-    border-radius: 60px;
-  }
-
-  .btn-primary:hover,
-  .btn-primary:focus,
-  .btn-primary:active,
-  .btn-primary.active,
-  .open > .dropdown-toggle.btn-primary {
-    color: #994a01;
-    background-color: #994a01;
-    border-color: #994a01; /*set the color you want here*/
   }
 }
 
