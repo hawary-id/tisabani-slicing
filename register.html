@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+=======
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+>>>>>>> fd86526cc0345b29c31a937c983d6e2322c511c1
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -11,6 +20,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="style/main.css" rel="stylesheet" />
+<<<<<<< HEAD
 </head>
 
 <body>
@@ -38,6 +48,52 @@
                     </li>
                     <li class="nav-item">
                         <a href="/login.html" class="btn btn-sm btn-primary nav-link px-4 text-white">Sign In</a
+=======
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">
+          <img
+            src="/images/logo.png"
+            alt="logo"
+            class="d-inline-block align-top"
+            height="30"
+          />
+          Tisabani
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/categories.html" class="nav-link">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about.html" class="nav-link">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a href="/register.html" class="nav-link">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="/login.html"
+                class="btn btn-sm btn-primary nav-link px-4 text-white"
+                >Sign In</a
+>>>>>>> fd86526cc0345b29c31a937c983d6e2322c511c1
               >
             </li>
           </ul>
@@ -46,15 +102,23 @@
     </nav>
 
     <!--Page login-->
+<<<<<<< HEAD
     <div class="page-content page-auth">
       <div class="section-store-auth" data-aos="fade-up">
         <div class="container">
           <div class="row align-items-center justify-content-center row-login">
+=======
+    <div class="page-content page-auth" id="register">
+      <div class="section-store-auth" data-aos="fade-up">
+        <div class="container">
+          <div class="row align-items-center row-login justify-content-center">
+>>>>>>> fd86526cc0345b29c31a937c983d6e2322c511c1
             <div class="col-12 col-lg-4">
               <h2>
                 Upgrade fashion-mu,<br />
                 Menjadi lebih mudah.
               </h2>
+<<<<<<< HEAD
               <form action="" class="mt-3">
                 <div class="form-group">
                   <label for="name">Full Name</label>
@@ -77,6 +141,37 @@
                   href="/login.html"
                   class="btn btn-signup btn-block w-100 mt-4"
                   >Back to Sign In</a
+=======
+              <form class="mt-3">
+                <div class="form-group">
+                  <label for="name">Fullname</label>
+                  <input
+                    type="text"
+                    class="form-control is-valid"
+                    v-model="name"
+                    autofocus
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control is-invalid"
+                    v-model="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <a
+                  href="/dashboard.html"
+                  class="btn btn-primary btn-block text-white mt-4"
+                  >Sign Up Now</a
+                >
+                <a href="/register.html" class="btn btn-signup btn-block mt-4"
+                  >Sign In</a
+>>>>>>> fd86526cc0345b29c31a937c983d6e2322c511c1
                 >
               </form>
             </div>
@@ -103,6 +198,36 @@
     <script>
       AOS.init();
     </script>
+<<<<<<< HEAD
     <script src="/script/navbar-scroll.js"></script>
   </body>
 </html>
+=======
+    <script src="/vendor/vue/vue.js"></script>
+    <script src="https://unpkg.com/vue-toasted"></script>
+    <script>
+      Vue.use(Toasted);
+
+      var register = new Vue({
+        el: "#register",
+        mounted() {
+          AOS.init();
+          this.$toasted.error(
+            "Maaf, tampaknya email sudah terdaftar pada sistem kami.",
+            {
+              position: "top-center",
+              className: "rounded",
+              duration: 1000,
+            }
+          );
+        },
+        data: {
+          name: "Syamsul Hadi",
+          email: "hawary@gmail.com",
+        },
+      });
+    </script>
+    <script src="/script/navbar-scroll.js"></script>
+  </body>
+</html>
+>>>>>>> fd86526cc0345b29c31a937c983d6e2322c511c1
