@@ -1,7 +1,6 @@
 .page-dashboard {
   #page-content-wrapper {
     background: #f5f5fb;
-    min-width: 100vw;
   }
 
   #sidebar-wrapper {
@@ -80,7 +79,7 @@
 
     @include media-breakpoint-up(md) {
       margin-top: 20px;
-      margin-left: 20px;
+      margin-left: 0;
     }
 
     h5 {
@@ -102,6 +101,23 @@
       font-size: 16px;
       line-height: 24px;
       color: #9191a9;
+    }
+
+    .nav-pills {
+      .nav-link {
+        font-weight: normal;
+        font-size: 18px;
+        color: #9191a9;
+        border-radius: 0;
+
+        &.active {
+          font-weight: 500;
+          font-size: 18px;
+          color: #0c0d36;
+          border-bottom: 2px solid #ff7158;
+          background: none;
+        }
+      }
     }
   }
 }
